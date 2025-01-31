@@ -1,34 +1,14 @@
-const express = require("express");
+const express = require('express');
+let routesIndex = require('./routes/index');
+let routesUsers = require('./routes/users');
 
 let app = express();
 
-app.get("/", (req, res) => {
+app.use(routesIndex);
+app.use('/users', routesUsers);
 
-  console.log("URL:", req.url);
-  console.log("METHOD:", req.method);
+app.listen(3000, '127.0.0.1', () => {
 
-  res.statusCode = 200;
-  res.setHeader("Content-type", "text/html");
-  res.end("<h1>olá</h1>");
+    console.log("servidor rodando!");
 
-});
-
-app.get("/users", (req, res) => {
-
-  res.statusCode = 200;
-  res.setHeader("Content-type", "application/json");
-  res.json({
-      users: [
-        {
-          name: "Hcode",
-          email: "Ctt@gmaill.com.br",
-          id: 1,
-        },
-      ],
-    });
-  
-});
-
-  app.listen(3000, "127.0.0.1", () => {
-  console.log("Servidor rodando!!!");
 });
