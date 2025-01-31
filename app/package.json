@@ -1,0 +1,30 @@
+{
+  "name": "nodejs-backend",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adryan-santana-flooxmongagua/nodejs-backend.git"
+  },
+  "keywords": [
+    "nodeback"
+  ],
+  "author": "Adryan Alex.",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/adryan-santana-flooxmongagua/nodejs-backend/issues"
+  },
+  "homepage": "https://github.com/adryan-santana-flooxmongagua/nodejs-backend#readme",
+  "description": "",
+  "dependencies": {
+    "body": "^5.1.0",
+    "consign": "^0.1.6",
+    "express": "^4.21.2",
+    "lodash": "^4.17.21",
+    "nedb": "^1.8.0",
+    "nedb-promises": "^6.2.3"
+  }
+}
