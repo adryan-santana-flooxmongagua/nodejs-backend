@@ -20,6 +20,7 @@
   "homepage": "https://github.com/adryan-santana-flooxmongagua/nodejs-backend#readme",
   "description": "",
   "dependencies": {
+    "consign": "^0.1.6",
     "express": "^4.21.2"
   }
 }
